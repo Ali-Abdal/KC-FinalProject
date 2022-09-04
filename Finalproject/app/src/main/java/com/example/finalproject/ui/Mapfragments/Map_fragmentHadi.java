@@ -1,4 +1,4 @@
-package com.example.finalproject;
+package com.example.finalproject.ui.Mapfragments;
 
 import android.os.Bundle;
 
@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.finalproject.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -16,7 +17,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Map_Fragment extends Fragment implements OnMapReadyCallback {
+public class Map_fragmentHadi extends Fragment implements OnMapReadyCallback {
 
     GoogleMap map;
     @Override
@@ -33,9 +34,9 @@ public class Map_Fragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         map = googleMap;
-        LatLng Jahrahospital = new LatLng(29.338008, 47.680026);
-        map.addMarker(new MarkerOptions().position(Jahrahospital).title("Jahrahospital"));
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(Jahrahospital, 15));
+        LatLng Hadihospital = new LatLng(29.321783, 48.046165);
+        map.addMarker(new MarkerOptions().position(Hadihospital).title("Hadihospital"));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(Hadihospital, 18));
 
     }
 }

@@ -4,8 +4,8 @@
     package="com.example.finalproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -17,13 +17,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProject"
         tools:targetApi="31">
+        <activity
+            android:name=".ForgotPass"
+            android:exported="false" />
+        <activity
+            android:name=".Verification"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Hospitals.Hadihos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Hospitals.Mubarkhos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Hospitals.Seefhos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Hospitals.Jaberhos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Hospitals.Adanhos"
+            android:exported="false"
+            android:label="@string/title_activity_adanhos"
+            android:theme="@style/Theme.FinalProject.NoActionBar" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/map_key">
+            android:value="@string/map_key" />
 
-        </meta-data>
         <activity
-            android:name=".Hospitalsprofile"
+            android:name=".ui.Hospitals.Jahrahos"
             android:exported="false" />
         <activity
             android:name=".DoctorProfile"
@@ -39,7 +62,6 @@
         <activity
             android:name=".Login"
             android:exported="false" />
-
         <activity
             android:name=".Splashscreen"
             android:exported="true">

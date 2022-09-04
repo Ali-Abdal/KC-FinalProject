@@ -7,6 +7,12 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.example.finalproject.ui.Hospitals.Adanhos;
+import com.example.finalproject.ui.Hospitals.Hadihos;
+import com.example.finalproject.ui.Hospitals.Jaberhos;
+import com.example.finalproject.ui.Hospitals.Jahrahos;
+import com.example.finalproject.ui.Hospitals.Mubarkhos;
+import com.example.finalproject.ui.Hospitals.Seefhos;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -27,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
-    FirebaseAuth auth;
+    FirebaseAuth mauth;
     Button logoutbtn;
     LinearLayout johndoc, lucasdoc, ameliadoc,andrewdoc,michealdoc,williamdoc, seefhos,
     adanhos, mubarkhos, jahrahos,hadihos, jaberhos ;
@@ -41,9 +47,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        auth = FirebaseAuth.getInstance();
+        mauth = FirebaseAuth.getInstance();
 
-        Button testbtn = findViewById(R.id.btntest1);
 
         logoutbtn = findViewById(R.id.btnlogout);
 
@@ -76,16 +81,8 @@ public class MainActivity extends AppCompatActivity {
         hadihos.setOnClickListener(this::onClick);
         jaberhos.setOnClickListener(this::onClick);
 
-        testbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Hospitalsprofile.class));
-
-            }
-        });
-
         logoutbtn.setOnClickListener(view -> {
-            auth.signOut();
+            mauth.signOut();
            startActivity(new Intent(MainActivity.this, Login.class));
 
         });
@@ -127,11 +124,15 @@ public class MainActivity extends AppCompatActivity {
         @Override
     protected void onStart() {
         super.onStart();
-        FirebaseUser user = auth.getCurrentUser();
+        FirebaseUser user = mauth.getCurrentUser();
+
        if (user == null){
             startActivity(new Intent(MainActivity.this, Login.class));
-
         }
+       else if(!user.isEmailVerified()){
+           startActivity(new Intent(MainActivity.this, Login.class));
+
+       }
     }
     public void onClick(View v){
         if(v.equals(johndoc)){
@@ -239,36 +240,29 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         else if(v.equals(adanhos)){
-            Intent intent2 = new Intent(MainActivity.this, Hospitalsprofile.class);
-            Hospitals hos1 = new Hospitals("Adan Hospital", 78902345);
-            intent2.putExtra("name",hos1.getName());
-            intent2.putExtra("num",hos1.getPhonenum());
+            Intent intent2 = new Intent(MainActivity.this, Adanhos.class);
             startActivity(intent2);
         }
         else if(v.equals(jaberhos)){
-            Intent intent2 = new Intent(MainActivity.this, Hospitalsprofile.class);
-
-            startActivity(intent2);
+            Intent intent3 = new Intent(MainActivity.this, Jaberhos.class);
+            startActivity(intent3);
         }
         else if(v.equals(jahrahos)){
-            Intent intent2 = new Intent(MainActivity.this, Hospitalsprofile.class);
+            Intent intent4 = new Intent(MainActivity.this, Jahrahos.class);
 
-            startActivity(intent2);
+            startActivity(intent4);
         }
         else if(v.equals(hadihos)){
-            Intent intent2 = new Intent(MainActivity.this, Hospitalsprofile.class);
-
-            startActivity(intent2);
+            Intent intent5 = new Intent(MainActivity.this, Hadihos.class);
+            startActivity(intent5);
         }
         else if(v.equals(mubarkhos)){
-            Intent intent2 = new Intent(MainActivity.this, Hospitalsprofile.class);
-
-            startActivity(intent2);
+            Intent intent6 = new Intent(MainActivity.this, Mubarkhos.class);
+            startActivity(intent6);
         }
         else if(v.equals(seefhos)){
-            Intent intent2 = new Intent(MainActivity.this, Hospitalsprofile.class);
-
-            startActivity(intent2);
+            Intent intent7 = new Intent(MainActivity.this, Seefhos.class);
+            startActivity(intent7);
         }
 
 
