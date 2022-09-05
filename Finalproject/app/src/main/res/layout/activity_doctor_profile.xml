@@ -6,7 +6,7 @@
     android:background="#F7F7F7">
 
     <TextView
-        android:id="@+id/txtdrnumprofile"
+        android:id="@+id/hadiphone"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -26,6 +26,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="96dp"
+        android:fontFamily="@font/radley"
         android:text="An Neurologist, graudated from Harvard University. Has more than 10 years of expearince. Won the best doctor prize in Neurology"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -38,6 +39,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="237dp"
+        android:fontFamily="@font/radley"
         android:text="Neurologist"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -56,13 +58,13 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgdoctorprofile"
-        android:layout_width="190dp"
-        android:layout_height="228dp"
+        android:layout_width="176dp"
+        android:layout_height="204dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="138dp"
-        android:layout_marginEnd="111dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="117dp"
         android:src="@drawable/andrew"
         app:shapeAppearanceOverlay="@style/Circular">
 
@@ -75,11 +77,12 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="269dp"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@font/radley"
         android:text="Dr. Andrew"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView7"

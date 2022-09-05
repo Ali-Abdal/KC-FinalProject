@@ -4,8 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
-import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.finalproject.ui.Hospitals.Adanhos;
 import com.example.finalproject.ui.Hospitals.Hadihos;
@@ -34,9 +35,10 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     FirebaseAuth mauth;
-    Button logoutbtn;
     LinearLayout johndoc, lucasdoc, ameliadoc,andrewdoc,michealdoc,williamdoc, seefhos,
     adanhos, mubarkhos, jahrahos,hadihos, jaberhos ;
+    TextView logout;
+    ImageView btnshop;
     ArrayList<Doctors> doctorsArrayList = new ArrayList<>();
     int x = 0;
 
@@ -49,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         mauth = FirebaseAuth.getInstance();
 
-
-        logoutbtn = findViewById(R.id.btnlogout);
+        logout = findViewById(R.id.Logoutbtn);
 
         johndoc = findViewById(R.id.doc_john);
         lucasdoc = findViewById(R.id.doc_lucas);
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         hadihos = findViewById(R.id.hos_hadi);
         jaberhos = findViewById(R.id.hos_jaber);
 
+        btnshop =findViewById(R.id.Shopbtn);
 
         johndoc.setOnClickListener(this::onClick);
         lucasdoc.setOnClickListener(this::onClick);
@@ -80,12 +82,17 @@ public class MainActivity extends AppCompatActivity {
         jahrahos.setOnClickListener(this::onClick);
         hadihos.setOnClickListener(this::onClick);
         jaberhos.setOnClickListener(this::onClick);
+        btnshop.setOnClickListener(this::onClick);
+//        logout.setOnClickListener(this::onClick);
 
-        logoutbtn.setOnClickListener(view -> {
-            mauth.signOut();
-           startActivity(new Intent(MainActivity.this, Login.class));
-
+        btnshop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Shop.class));
+            }
         });
+
+
 
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
@@ -264,6 +271,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent7 = new Intent(MainActivity.this, Seefhos.class);
             startActivity(intent7);
         }
+
+//        else if(v.equals(logout)){
+//            mauth.signOut();
+//            startActivity(new Intent(MainActivity.this, Login.class));
+//
+//        }
 
 
     }

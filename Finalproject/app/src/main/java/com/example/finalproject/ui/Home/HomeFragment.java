@@ -20,6 +20,7 @@ import com.example.finalproject.DoctorProfile;
 import com.example.finalproject.Doctors;
 import com.example.finalproject.R;
 import com.example.finalproject.databinding.FragmentHomeBinding;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class HomeFragment extends Fragment {
     ArrayList<Doctors> doctorsArrayList = new ArrayList<>();
 
 
+
     private FragmentHomeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -39,6 +41,7 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         View v = inflater.inflate(R.layout.fragment_home, container, false);
+
 
 
 

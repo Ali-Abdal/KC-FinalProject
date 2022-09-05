@@ -18,10 +18,11 @@
         android:layout_marginStart="95dp"
         android:layout_marginTop="365dp"
         android:layout_marginEnd="94dp"
+        android:fontFamily="@font/radley"
         android:text="Hospitals"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 
@@ -75,8 +76,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Seef Hospital"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Seef Hospital"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
@@ -117,6 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Mubark Hospital"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -158,8 +161,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Jaber Hospital"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Jaber Hospital"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
@@ -200,8 +204,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Al-Jahra Hospital"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Al-Jahra Hospital"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
@@ -242,8 +247,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Hadi Hospital"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Hadi Hospital"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
@@ -284,8 +290,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Adan Hospital"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Adan Hospital"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
@@ -298,6 +305,7 @@
 
     </HorizontalScrollView>
 
+
     <TextView
         android:id="@+id/txtview"
         android:layout_width="wrap_content"
@@ -307,14 +315,14 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="94dp"
-        android:layout_marginTop="174dp"
+        android:layout_marginTop="171dp"
         android:layout_marginEnd="95dp"
+        android:fontFamily="@font/radley"
         android:text="Doctors"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
-
 
     <HorizontalScrollView
         android:id="@+id/doctorsview"
@@ -365,8 +373,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Dr. Andrew"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Dr. Andrew"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
@@ -376,6 +385,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Neurologist"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -416,6 +426,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Dr. Amelia"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -426,10 +437,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Dermatologists"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="8sp" />
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -465,8 +478,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Dr. John"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Dr. John"
                         android:textAlignment="center"
                         android:textColor="#000000"
                         android:textSize="12sp" />
@@ -476,6 +490,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Anesthesiologists"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -516,8 +531,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Dr. Lucas"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Dr. Lucas"
                         android:textAlignment="center"
                         android:textColor="#000000" />
 
@@ -526,6 +542,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Cardiologists"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -566,8 +583,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Dr. Michael"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Dr. Michael"
                         android:textAlignment="center"
                         android:textColor="#000000" />
 
@@ -576,6 +594,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Psychiatrists"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -616,8 +635,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Dr. William"
+                        android:fontFamily="@font/radley"
 
+                        android:text="Dr. William"
                         android:textAlignment="center"
                         android:textColor="#000000" />
 
@@ -626,6 +646,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
+                        android:fontFamily="@font/radley"
                         android:text="Pathologists"
                         android:textAlignment="center"
                         android:textColor="#000000"
@@ -651,14 +672,14 @@
         android:layout_marginTop="14dp"
         android:src="@drawable/updateimg" />
 
-    <Button
-        android:id="@+id/btnlogout"
+    <ImageView
+        android:id="@+id/Shopbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="16dp"
-        android:text="Button" />
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/ic_baseline_shopping_cart_24" />
 
 </RelativeLayout>

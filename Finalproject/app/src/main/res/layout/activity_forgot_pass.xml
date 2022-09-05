@@ -38,39 +38,6 @@
         android:text="Reset password"
         android:textColor="#FFFFFF" />
 
-    <EditText
-        android:id="@+id/etforgotpass"
-        android:layout_width="299dp"
-        android:layout_height="47dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="305dp"
-        android:background="@drawable/textbacktest"
-        android:ems="10"
-        android:hint="Enter Your Email"
-        android:inputType="textPersonName"
-        android:paddingStart="20dp"
-        android:textColorHint="#74A3A0A0"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="352dp"
-        android:text="Email"
-        android:textColor="#333232"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="210dp"
@@ -81,4 +48,48 @@
         android:layout_marginTop="35dp"
         android:layout_marginEnd="101dp"
         app:srcCompat="@drawable/updateimg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="221dp"
+        android:background="@drawable/screenshot_2022_09_05_012659">
+
+        <EditText
+            android:id="@+id/etforgotpass"
+            android:layout_width="280dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="74dp"
+            android:layout_marginBottom="26dp"
+            android:backgroundTint="#00DD0000"
+            android:ems="10"
+            android:hint="Enter Your Email"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColorHint="#74A3A0A0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="75dp"
+            android:text="Email"
+            android:textColor="#333232"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 </RelativeLayout>

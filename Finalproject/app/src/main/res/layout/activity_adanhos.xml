@@ -6,7 +6,7 @@
     android:background="#F7F7F7">
 
   <TextView
-      android:id="@+id/txtdrnumprofile"
+      android:id="@+id/hadiphone"
       android:layout_width="145dp"
       android:layout_height="wrap_content"
       android:layout_alignParentStart="true"
