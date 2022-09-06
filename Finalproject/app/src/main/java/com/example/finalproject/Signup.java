@@ -1,14 +1,20 @@
 package com.example.finalproject;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +24,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.UploadTask;
+
+import java.io.IOException;
+import java.util.UUID;
 
 public class Signup extends AppCompatActivity implements View.OnClickListener {
    private FirebaseAuth mauth;
@@ -44,11 +56,7 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
 
          login2 = (TextView) findViewById(R.id.btnlogin2);
          login2.setOnClickListener(this);
-
-
-
 }
-
     @Override
     public void onClick(View view) {
         switch (view.getId()){
@@ -58,8 +66,6 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
             case R.id.btnlogin2:
                 startActivity(new Intent(this, Login.class));
                 break;
-
-
         }
     }
 
@@ -109,7 +115,6 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
             passetsu.requestFocus();
             return;
         }
-
         progressBar.setVisibility(View.VISIBLE);
         mauth.createUserWithEmailAndPassword(email,pass)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -127,8 +132,7 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
                                                Toast.makeText(Signup.this, "User has been registered successfully!"
                                                , Toast.LENGTH_LONG).show();
                                                progressBar.setVisibility(View.GONE);
-                                               startActivity(new Intent(Signup.this, Login.class));
-
+                                               startActivity(new Intent(Signup.this, Uploadimage.class));
                                            }
                                            else{
                                                Toast.makeText(Signup.this, "Failed to register!"
@@ -147,5 +151,4 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
                 });
 
 
-    }
-}
+}}

@@ -6,6 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".ui.Profile.ProfileFragment">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        tools:context=".Signup">
+
+        <ProgressBar
+            android:id="@+id/progressBarsignup"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="164.5dp"
+            android:layout_marginTop="296dp"
+            android:layout_marginEnd="164.5dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#6DD1FE"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/clientimageprofile"
+        android:layout_width="118dp"
+        android:layout_height="124dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/avatar"
+        app:shapeAppearanceOverlay="@style/Circular" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="257dp"
@@ -16,7 +52,7 @@
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="162dp"
-        android:background="@drawable/screenshot_2022_09_05_075528"
+        android:background="@drawable/screenshot_2022_09_06_045205"
         android:orientation="vertical">
 
         <TextView
@@ -36,7 +72,7 @@
             android:layout_width="286dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="57dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="17dp"
 
             android:backgroundTint="#00FF0000"
             android:ems="10"
@@ -61,7 +97,7 @@
             android:layout_width="286dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="57dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="16dp"
 
             android:backgroundTint="#00FF0000"
             android:ems="10"
@@ -86,7 +122,7 @@
             android:layout_width="286dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="57dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="16dp"
 
             android:backgroundTint="#00FF0000"
             android:ems="10"
@@ -114,16 +150,6 @@
         android:indeterminateTint="#6DD1FE"
         android:indeterminateTintMode="src_atop"
         android:visibility="invisible" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/clientimage"
-        android:layout_width="118dp"
-        android:layout_height="124dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp"
-        android:src="@drawable/avatar"
-        app:shapeAppearanceOverlay="@style/Circular" />
 
     <TextView
         android:id="@+id/profileemail"
