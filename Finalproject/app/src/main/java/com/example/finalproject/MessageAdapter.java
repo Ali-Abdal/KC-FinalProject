@@ -64,7 +64,7 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageH
         constraintSet.applyTo(constraintLayout);
     }
     }
-
+// R.drawable.avatar
     @Override
     public int getItemCount() {
         return messages.size();

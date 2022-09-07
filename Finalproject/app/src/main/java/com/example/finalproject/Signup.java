@@ -88,7 +88,7 @@ public class Signup extends AppCompatActivity implements View.OnClickListener {
 
         }
         if(age.isEmpty()){
-            phoneetsu.setError("Phone number is required!");
+            phoneetsu.setError("Age is required!");
             phoneetsu.requestFocus();
             return;
 

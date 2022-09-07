@@ -90,7 +90,6 @@ public class Uploadimage extends AppCompatActivity {
         if(requestCode==1 && resultCode==RESULT_OK && data!=null && data.getData()!=null){
             imagePath = data.getData();
             getImageInImageView();
-            x++;
         }
     }
 
@@ -135,6 +134,7 @@ public class Uploadimage extends AppCompatActivity {
             public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
                 double progress = 100.0 * snapshot.getBytesTransferred() / snapshot.getTotalByteCount();
                 progressDialog.setMessage("Uploaded" + (int) progress + "%");
+                x++;
             }
         });
 

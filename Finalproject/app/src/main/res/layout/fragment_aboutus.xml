@@ -4,4 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Pharmacy.PharmacyFragment"/>
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".ui.Test.TestFragment">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btnsubmit"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="523dp"
+        android:layout_marginEnd="98dp"
+        android:background="@drawable/buttonbacklight"
+        android:backgroundTint="#000000"
+        android:text="Submit "
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="-2dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="35dp"
+        android:text="Test Your Self!"
+        android:textAlignment="center"
+        android:textColor="#333232"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtqna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="-4dp"
+        android:text="Click Yes to start!"
+        android:textAlignment="center"
+        android:textColor="#333232"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="158dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btnA"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#CAC9C9"
+            android:text="as 1"
+
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btnB"
+            android:layout_width="300dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#CAC9C9"
+            android:text="as 2"
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btnC"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#CAC9C9"
+            android:text="as 3"
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btnD"
+            android:layout_width="300dp"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#CAC9C9"
+            android:text="as 4"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+</RelativeLayout>

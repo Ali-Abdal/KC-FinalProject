@@ -30,17 +30,19 @@
             android:indeterminateTintMode="src_atop"
             android:visibility="invisible" />
 
-    </RelativeLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/clientimageprofile"
+            android:layout_width="162dp"
+            android:layout_height="163dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="481dp"
+            android:src="@drawable/avatar"
+            app:shapeAppearanceOverlay="@style/Circular" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/clientimageprofile"
-        android:layout_width="118dp"
-        android:layout_height="124dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/avatar"
-        app:shapeAppearanceOverlay="@style/Circular" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"

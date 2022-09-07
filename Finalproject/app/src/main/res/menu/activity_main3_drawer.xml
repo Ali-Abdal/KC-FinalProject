@@ -14,7 +14,7 @@
             android:title="@string/menu_gallery" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_baseline_local_grocery_store_24"
+            android:icon="@drawable/ic_baseline_format_list_bulleted_24"
             android:title="@string/menu_slideshow" />
     </group>
 </menu>

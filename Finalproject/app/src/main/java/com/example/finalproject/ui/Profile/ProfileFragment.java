@@ -18,6 +18,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
 import com.example.finalproject.Login;
 import com.example.finalproject.R;
 import com.example.finalproject.Signup;
@@ -83,6 +84,7 @@ public class ProfileFragment extends Fragment {
         final  TextView nametxt = (TextView) root.findViewById(R.id.profilename);
         final  TextView agetxt = (TextView) root.findViewById(R.id.profileage);
         final  TextView addresstxt = (TextView) root.findViewById(R.id.profileaddress);
+        final ImageView profileimg = (ImageView) root.findViewById(R.id.clientimageprofile);
 
         reference.child(Userid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -94,6 +96,7 @@ public class ProfileFragment extends Fragment {
                     String email = userProfile.getEmail();
                     String age = userProfile.getAge();
                     String address = userProfile.getAddress();
+                    String img = userProfile.getPhoto();
 
                     emailtxt.setText(email);
                     nametxt.setText(name);

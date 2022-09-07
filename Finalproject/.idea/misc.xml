@@ -15,10 +15,12 @@
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/drawable/layout_backgrouand.xml" value="0.184" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/drawable/messege_background.xml" value="0.1" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/drawable/progress_bg.xml" value="0.1785" />
+        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/drawable/sosbutton_background.xml" value="0.1875" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/drawable/test.xml" value="0.295" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/font/.xml" value="0.3425925925925926" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_adanhos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_cart.xml" value="0.1" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_chat_users.xml" value="0.33" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_doctor_profile.xml" value="0.33" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_forgot_pass.xml" value="0.33" />
@@ -34,7 +36,7 @@
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_mubarkhos.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_pharmacy.xml" value="0.25" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_seef_hospital.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_shop.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_shop.xml" value="0.22709163346613545" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_splash.xml" value="0.35054347826086957" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/activity_uploadimage.xml" value="0.25" />
@@ -48,7 +50,7 @@
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_aboutus.xml" value="0.25" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_first.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_gallery.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_map_.xml" value="0.22" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_map_adan.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_map_hadi.xml" value="0.17831813576494426" />
@@ -59,6 +61,8 @@
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_slideshow.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/fragment_test.xml" value="0.33" />
+        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/layout_cart_item.xml" value="0.1" />
+        <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/layout_product_item.xml" value="0.1" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/message_holder.xml" value="0.1" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/messahe_holder.xml" value="0.20185185185185187" />
         <entry key="..\:/Users/Enderistic/Desktop/Finalproject/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />

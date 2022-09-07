@@ -34,9 +34,7 @@ public class Verification extends AppCompatActivity {
         verfy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Verification.this, Login.class));
-
-
+                    startActivity(new Intent(Verification.this, Login.class));
 
 
             }
